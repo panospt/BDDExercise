@@ -8,7 +8,6 @@ namespace BDDExercise.StepDefinitions
     [Binding]
     public class LoginSpecsStepDefinitions
     {
-        //private ScenarioContext _scenarioContext;
         private readonly HomePage _homePage;
 
         public LoginSpecsStepDefinitions(HomePage homePage)

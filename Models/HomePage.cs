@@ -19,23 +19,8 @@ namespace BDDExercise.Models
             Browser = browser;
         }
 
-        //private readonly IPage _page;
-        //private ScenarioContext _scenarioContext;
-
-        //public HomePage(ScenarioContext scenarioContext, IPage page) : base(scenarioContext, page)
-        //{
-        //    _scenarioContext = scenarioContext;
-        //    _page = page;
-        //    _scenarioContext.Add("p1", _page);
-        //}
-
         public async Task NavigateToHomePage()
         {
-            //var playwright = await Playwright.CreateAsync();
-            //var browser = await playwright.Chromium.LaunchAsync(new BrowserTypeLaunchOptions
-            //{
-            //    Headless = false,
-            //});
             var BrowserContext = await Browser.NewContextAsync();
             Page = await BrowserContext.NewPageAsync();
 

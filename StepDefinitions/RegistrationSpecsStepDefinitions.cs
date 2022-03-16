@@ -11,7 +11,6 @@ namespace BDDExercise.StepDefinitions
     [Binding]
     public class RegistrationSpecsStepDefinitions
     {
-        //private ScenarioContext _scenarioContext;
         private readonly RegistrationPage _registrationPage;
 
         public RegistrationSpecsStepDefinitions(IBrowser browser)
@@ -39,7 +38,6 @@ namespace BDDExercise.StepDefinitions
         [When(@"User provides first name (.*)")]
         public async Task WhenUserProvidesFirstName(string firstName)
         {
-            //var page = (IPage)_scenarioContext["p1"];
             await _registrationPage.SetFirstName(firstName);
         }
 
